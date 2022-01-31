@@ -1,7 +1,95 @@
-<html>
-<body>
-<h1>Alex's website</h1>
-<p>There will be more stuff soon</p>
-<p>Здарова</p>
-</body>
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Alex's webpage</title>
+    </head>
+    <body class="body">
+        <nav class="navbar navbar-expand-md navbar-light border" style="background-color: #FF7F50;">
+            <h1><a class="nav" href="index.html" style="color: green">Alex's Homepage</a></h1>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto mt-2">
+                        <h3><li class="nav"><a class="nav-link" href="chemistry.html">Chemistry</a></li></h3>
+                        <h3><li class="nav"><a class="nav-link" href="compsci.html">Computer Science</a></li></h3>
+                        <h3><li class="nav"><a class="nav-link" href="collection.html">My Collection</a></li></h3>
+                        <h3><li class="nav"><a class="nav-link" href="form.html">Donate</a></li></h3>
+                    </ul>
+            </div>
+        </nav>
+        <h1 class="header_top">Alex's Homepage</h1>
+
+        <h2 class="header">Hello there</h2>
+        <p class="text">Hello there, visitor! My name is Alexander Zhigalin and this is my CS50 homepage. It's a bit underdeveloped and primitive right now but that's a good start
+        and I certainly can use it for future development and improvement. This page outlines my current academic (and not only academic) interests</p>
+
+
+        <h2 class="header_top">My interests:</h2>
+        <div class="card-deck">
+          <div class="card">
+            <a href="chemistry.html">
+                <img src="chem.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Chemistry</h5>
+              <p class="card-text">I'm a big fan of chemistry since high school and I'm continuing to pursue this interest here at Harvard. Find out more about my chemistry adventures.</p>
+              <p class="card-text"><small class="text-muted"><a href="chemistry.html">My chemistry adventures</a></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="compsci.html">
+                <img src="neural_net.gif" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Computer Science</h5>
+                <p class="card-text">My interest in CS is relatively new but I think there's a lot to do with it in the nearest future.</p>
+                <p class="card-text"><small class="text-muted"><a href="compsci.html">Check out my CS plans</a></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="collection.html">
+                <img src="collection.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">My bottle cap collection</h5>
+              <p class="card-text">As a hobby, I pick up some bottle caps on the streets and in other places. As of now, I have more than 200 unique items.</p>
+              <p class="card-text"><small class="text-muted"><a href="collection.html">Check them out!</a></small></p>
+            </div>
+          </div>
+        </div>
+
+
+
+            <h3 class="header">Pages to visit:</h3>
+            <ul class="text">
+                <li><a href="chemistry.html" style="color: green;">Chemistry</a></li>
+                <li><a href="compsci.html" style="color: green;">Computer Science</a></li>
+                <li><a href="collection.html" style="color: green;">My bottle cap collection</a></li>
+                <li><a href="form.html" style="color: green;">Fake donation station</a></li>
+            </ul>
+
+
+            <div class="media">
+                <img src="news.jpg" class="mr-3" style="max-width: 6%;">
+                <div class="media-body">
+                <h5 class="mt-0">Big news</h5>
+                    I have no idea what else to implement here. In fact, I am in a state of mild despair. I guess it's more of a background-everyday-despair than any kind of sharp disturbing despair.
+                    More like existential despair. If there is one thing you can take away from this page, let it be <a href="http://existentialcomics.com/">existential comics</a> - they are my absolute favorite
+                    time killer. Enjoy while you can.
+            </div>
+            </div>
+
+            <button id="peach">I like peach color</button>
+            <script>
+                document.querySelector("#peach").onclick = function() {
+                    document.querySelector('body').style.backgroundColor = "PeachPuff";
+                }
+            </script>
+
+
+    </body>
 </html>

@@ -1,0 +1,34 @@
+a
+{
+    color: green;
+}
+.header
+{
+    color: green;
+    font-family: cursive;
+    margin: 40px;
+}
+.header_top
+{
+    color: green;
+    font-family: cursive;
+    text-align: center;
+}
+.nav
+{
+    color: green;
+    font-family: cursive;
+    margin: 10px;
+}
+td
+{
+    padding: 10px;
+}
+body
+{
+    background-color: #FAEBD7;
+}
+.text
+{
+    margin: 40px;
+}

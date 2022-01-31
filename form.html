@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <Title>
+            Donate
+        </Title>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-light border" style="background-color: #FF7F50;">
+            <h1><a class="nav" href="index.html" style="color: green">Alex's Homepage</a></h1>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto mt-2">
+                        <h3><li class="nav"><a class="nav-link" href="chemistry.html">Chemistry</a></li></h3>
+                        <h3><li class="nav"><a class="nav-link" href="compsci.html">Computer Science</a></li></h3>
+                        <h3><li class="nav"><a class="nav-link" href="collection.html">My Collection</a></li></h3>
+                        <h3><li class="nav"><a class="nav-link" href="form.html">Donate</a></li></h3>
+                    </ul>
+            </div>
+        </nav>
+
+        <h1 class="header_top">Donation station</h1>
+        <p></p>
+        <p style="text-align: center;">Donate an arbitrary integer amount of dollars to my future endeavours!</p>
+
+        <form onsubmit="thank_donor(); return false;" style="text-align: center;">
+            I would like to donate $<input type="number" id="donation_amt">
+            <input type="submit" value="Donate">
+        </form>
+        <p></p>
+        <div id="thankspace" style="padding 20px; text-align: center;"></div>
+        <div id="thankspace_big" style='text-align: center;'></div>
+        <script src="thancc.js"></script>
+        <button id="peach">I like peach color</button>
+            <script>
+                document.querySelector("#peach").onclick = function() {
+                    document.querySelector('body').style.backgroundColor = "PeachPuff";
+                }
+            </script>
+    </body>
+</html>
